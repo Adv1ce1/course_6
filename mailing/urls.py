@@ -16,4 +16,3 @@ urlpatterns = [
     path('mailing/<int:mailing_pk>/create_message/', MessageCreateView.as_view(), name='create_message'),
     path('delivery_report/', cache_page(60)(DeliveryReportView.as_view()), name='delivery_report'),
 ]
-
